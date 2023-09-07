@@ -1,0 +1,11 @@
+name: main workflow
+on:
+  push:
+    branches:
+      - main
+jobs:
+  create-release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: install
+        run: npm ci
